@@ -1,0 +1,17 @@
+{
+  "name": "dog-shelter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:delete": "dropdb dog-shelter",
+    "db:create": "createdb dog-shelter",
+    "db:schema": "psql -f schema.sql dog-shelter",
+    "db:seed": "psql -f seed.sql dog-shelter",
+    "db:reset": "npm run db:delete && npm run db:create && npm run db:schema && npm run db:seed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
